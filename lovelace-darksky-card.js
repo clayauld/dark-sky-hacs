@@ -29,14 +29,15 @@ console.info(
     var summary = this.config.entity_daily_summary ? html`<br><span class="summary" id="daily-summary-text">${this._hass.states[this.config.entity_daily_summary].state}</span></br>` : ``;
     var separator = this.config.show_separator ? html`<hr class=line>` : ``;
     var today = this.config.entity_today ? html`<span class="today" id="today-text">${this._hass.states[this.config.entity_today].state}</span>` : ``;
-    
+    var title = this.config.title ? html`<div class="title">${this.config.title}</div>` : ``;
     
 // Build HTML    
     return html`
       <style>
       ${this.style()}
       </style>
-      <ha-card class = "card">  
+      <ha-card class = "card">
+        ${title}
         <span class="icon bigger" id="icon-bigger" style="background: none, url(/local/icons/weather_icons/${this.config.static_icons ? "static" : "animated"}/${this.weatherIcons[this.current.conditions]}.svg) no-repeat; background-size: contain;">${this.current.conditions}</span>
         <span class="temp" id="temperature-text">${this.current.temperature}</span><span class="tempc">${this.getUOM('temperature')}</span>
         ${currentText}
@@ -487,6 +488,18 @@ style() {
   var temp_color = this.config.temp_color ? this._hass.states[this.config.temp_color].state : 'grey';
   
 return html`
+      .title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--ha-card-header-color, --primary-text-color);
+        font-family: var(--ha-card-header-font-family,);
+        font-size: var(--ha-card-header-font-size, 24px);
+        letter-spacing: -0.012em;
+        line-height: 48px;
+        font-weight: normal;
+        margin: -1.5rem 0 1.5rem 0;
+      }
       .clear {
       clear: both;
 		  line-height:1.2;

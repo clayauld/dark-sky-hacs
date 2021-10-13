@@ -100,6 +100,8 @@ in your configuration.  The card will not work at all if any of these lines are 
 type: 'custom:lovelace-darksky-card'
 entity_current_conditions: sensor.dark_sky_icon
 entity_temperature: sensor.dark_sky_temperature
+entity_summary_today: sensor.dark_sky_summary_0d
+entity_daily_summary: sensor.dark_sky_daily_summary
 entity_forecast_high_temp_1: sensor.dark_sky_daytime_high_temperature_1d
 entity_forecast_high_temp_2: sensor.dark_sky_daytime_high_temperature_2d
 entity_forecast_high_temp_3: sensor.dark_sky_daytime_high_temperature_3d
@@ -133,8 +135,6 @@ entity_wind_speed: sensor.dark_sky_wind_speed
 entity_humidity: sensor.dark_sky_humidity
 entity_pressure: sensor.dark_sky_pressure
 entity_apparent_temp: sensor.dark_sky_apparent_temperature
-entity_summary_today: sensor.dark_sky_summary_0d
-entity_daily_summary: sensor.dark_sky_daily_summary
 entity_pop: sensor.dark_sky_precip_probability
 entity_pop_intensity: sensor.dark_sky_precip_intensity
 entity_pop_1: sensor.dark_sky_precip_probability_1d

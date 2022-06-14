@@ -158,20 +158,21 @@ alt_humidity: sensor.dark_sky_alt_humidity
 **Example template sensors:** You can call template sensors whatever you want so long as you use the same name in the card config.  
 ~~~~~
       dark_sky_current_text:
-        value_template:  {% if is_state("sensor.dark_sky_icon","clear-day") %} Clear 
-                         {% elif is_state("sensor.dark_sky_icon","clear-night") %} Clear 
-                         {% elif is_state("sensor.dark_sky_icon","rain") %} Rain
-                         {% elif is_state("sensor.dark_sky_icon","snow") %} Snowy
-                         {% elif is_state("sensor.dark_sky_icon","fog") %} Foggy
-                         {% elif is_state("sensor.dark_sky_icon","sleet") %} Sleet
-                         {% elif is_state("sensor.dark_sky_icon","wind") %} Windy
-                         {% elif is_state("sensor.dark_sky_icon","cloudy") %} Cloudy
-                         {% elif is_state("sensor.dark_sky_icon","partly-cloudy-day") %} Partly Cloudy
-                         {% elif is_state("sensor.dark_sky_icon","partly-cloudy-night") %} Partly Cloudy
-                         {% elif is_state("sensor.dark_sky_icon","hail") %} Hailing
-                         {% elif is_state("sensor.dark_sky_icon","lightning") %} Lightning
-                         {% elif is_state("sensor.dark_sky_icon","thunderstorm") %} Thunderstorm
-                         {% endif %}
+        value_template:  
+           '{% if is_state("sensor.dark_sky_icon","clear-day") %} Clear 
+            {% elif is_state("sensor.dark_sky_icon","clear-night") %} Clear 
+            {% elif is_state("sensor.dark_sky_icon","rain") %} Rain
+            {% elif is_state("sensor.dark_sky_icon","snow") %} Snowy
+            {% elif is_state("sensor.dark_sky_icon","fog") %} Foggy
+            {% elif is_state("sensor.dark_sky_icon","sleet") %} Sleet
+            {% elif is_state("sensor.dark_sky_icon","wind") %} Windy
+            {% elif is_state("sensor.dark_sky_icon","cloudy") %} Cloudy
+            {% elif is_state("sensor.dark_sky_icon","partly-cloudy-day") %} Partly Cloudy
+            {% elif is_state("sensor.dark_sky_icon","partly-cloudy-night") %} Partly Cloudy
+            {% elif is_state("sensor.dark_sky_icon","hail") %} Hailing
+            {% elif is_state("sensor.dark_sky_icon","lightning") %} Lightning
+            {% elif is_state("sensor.dark_sky_icon","thunderstorm") %} Thunderstorm
+            {% endif %}'
                          
       dark_sky_alt_wind:
         value_template: >-

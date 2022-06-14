@@ -1,6 +1,6 @@
 # Dark Sky Weather Card
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs) ![GitHub](https://img.shields.io/github/license/clayauld/lovelace-darksky-card?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/clayauld/lovelace-darksky-card?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=for-the-badge)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs) ![GitHub](https://img.shields.io/github/license/clayauld/lovelace-darksky-card?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/clayauld/lovelace-darksky-card?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2022?style=for-the-badge)
 
 The Dark Sky Weather Card provides current and forecasted weather conditions using the Dark Sky platform. You configure the card by passing in sensor entities from the Dark Sky Sensor platform. 
 

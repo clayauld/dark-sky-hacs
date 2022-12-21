@@ -1,3 +1,12 @@
+# CAUTION! ABANDONWARE AHEAD!
+
+I have opted to archive this repo for several reasons:
+1. I no longer have time to maintain this or fix any bugs.
+2. Dark Sky is going away very soon (March 31st, 2023) due to it's purchase by Apple.
+3. There are lots of other better alternatives now available on HACS that do the same thing, only better.
+
+Thank you for your interest. This repo will remain public and available as a reference for others to use.
+
 # Dark Sky Weather Card
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs) ![GitHub](https://img.shields.io/github/license/clayauld/lovelace-darksky-card?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/clayauld/lovelace-darksky-card?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2022?style=for-the-badge)
